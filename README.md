@@ -1,4 +1,4 @@
-# Ex.No:3a Develop program to create a text field and a button “Navigate”. When you enter “www.geeksforgeeks.org” and press navigate button it should open google page using Implicit Intents.
+# Ex.No:3a Develop program to create a text field and a button “Navigate”. When you enter “www.gmail.com” and press navigate button it should open google page using Implicit Intents.
 
 
 ## AIM:
@@ -75,27 +75,32 @@ Registeration Number : 212222040163
 MAINACTIVITY.JAVA:
 ```java
 package com.example.implicitintent;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent=new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("http://www.geeksforgeeks.org/"));
+        intent.setData(Uri.parse("https://www.gmail.com"));
         startActivity(intent);
     }
+
 }
 ```
 
 ## OUTPUT
-![xml](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/56d9ef97-c35a-4870-9e91-5f00bbf027c5)
-![java](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/cc9283ca-a998-408c-809d-54772dd128dc)
-![loginpage](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/71b5a8c3-e7bf-4e94-8f43-a947e2e8e5d4)
-![website](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/3ab73a08-de04-4121-9a05-6994cbc461b4)
+![xml](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/5bb70f84-762b-4868-9de6-cd7409113de6)
+![java](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/23475f65-6f95-41db-a56a-0d6fb9f67782)
+![output](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/580873ee-5ea8-4464-be27-a7a95a166485)
+
 
 
 ## RESULT
