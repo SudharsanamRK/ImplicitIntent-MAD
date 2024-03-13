@@ -26,7 +26,7 @@ Program to print the text “Implicitintent”.
 Developed by: Sudharsanam R K
 Registeration Number : 212222040163
 ```
-# ACTIVITY_MAIN.XML:
+## ACTIVITY_MAIN.XML:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -72,7 +72,7 @@ Registeration Number : 212222040163
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-MAINACTIVITY.JAVA:
+## MAINACTIVITY.JAVA:
 ```java
 package com.example.implicitintent;
 
