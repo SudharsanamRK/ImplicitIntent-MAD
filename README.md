@@ -26,6 +26,30 @@ Program to print the text “Implicitintent”.
 Developed by: Sudharsanam R K
 Registeration Number : 212222040163
 ```
+## MAINACTIVITY.JAVA:
+```java
+package com.example.implicitintent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.gmail.com"));
+        startActivity(intent);
+    }
+
+}
+```
+
 ## ACTIVITY_MAIN.XML:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -71,37 +95,43 @@ Registeration Number : 212222040163
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+## AndriodManifest.xml
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-## MAINACTIVITY.JAVA:
-```java
-package com.example.implicitintent;
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImplicitIntent"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-import androidx.appcompat.app.AppCompatActivity;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Intent intent=new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://www.gmail.com"));
-        startActivity(intent);
-    }
-
-}
+</manifest>
 ```
+
+
 
 
 ## OUTPUT
 ![xml](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/5bb70f84-762b-4868-9de6-cd7409113de6)
 ![java](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/23475f65-6f95-41db-a56a-0d6fb9f67782)
 ![output](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/580873ee-5ea8-4464-be27-a7a95a166485)
-
 
 
 
