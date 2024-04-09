@@ -130,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
 
 ## OUTPUT
 ![xml](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/5bb70f84-762b-4868-9de6-cd7409113de6)
-![java](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/23475f65-6f95-41db-a56a-0d6fb9f67782)
 ![output](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/580873ee-5ea8-4464-be27-a7a95a166485)
 
 
