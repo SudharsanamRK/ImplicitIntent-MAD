@@ -1,15 +1,15 @@
 # Ex.No:3a Develop program to create a text field and a button “Navigate”. When you enter “www.gmail.com” and press navigate button it should open google page using Implicit Intents.
 
 
-## AIM:
-
+## AIM
 To create a navigate button using Implicit Intent to display the gmail page using Android Studio.
 
-## EQUIPMENTS REQUIRED:
 
+## EQUIPMENTS REQUIRED
 Latest Version Android Studio
 
-## ALGORITHM:
+
+## ALGORITHM
 ```
 Step 1: Open Android Stdio and then click on File -> New -> New project.
 Step 2: Then type the Application name as ImplicitIntent and click Next.
@@ -20,24 +20,23 @@ Step 6: Display message give in MainActivity file.
 Step 7: Save and run the application.
 ```
 
-## PROGRAM:
+
+## PROGRAM
 ```
 Program to print the text “Implicitintent”.
 Developed by: Sudharsanam R K
 Registeration Number : 212222040163
 ```
-## MAINACTIVITY.JAVA:
+
+## MainActivity.java
 ```java
 package com.example.implicitintent;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,11 +45,10 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse("https://www.gmail.com"));
         startActivity(intent);
     }
-
 }
 ```
 
-## ACTIVITY_MAIN.XML:
+## activity_main_xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -95,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
 ## AndriodManifest.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -126,14 +125,9 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 
-
-
 ## OUTPUT
 ![xml](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/5bb70f84-762b-4868-9de6-cd7409113de6)
 ![output](https://github.com/SudharsanamRK/ImplicitIntent-MAD/assets/115523484/580873ee-5ea8-4464-be27-a7a95a166485)
-
-
-
 
 
 ## RESULT
